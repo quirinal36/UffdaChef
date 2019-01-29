@@ -8,12 +8,14 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class AskController extends UffdaController {
 
+	/**
+	 * 자주묻는질문 
+	 * @param mv
+	 * @return
+	 */
 	@RequestMapping(value="/ask/faq", method=RequestMethod.GET)
 	public ModelAndView getFaqView(ModelAndView mv) {
 		return mv;
 	}
-	@RequestMapping(value="/ask/kakaotalk", method=RequestMethod.GET)
-	public ModelAndView getKakaoTalkView(ModelAndView mv) {
-		return mv;
-	}
+	
 }
